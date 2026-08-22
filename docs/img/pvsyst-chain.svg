@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 600" width="1320" height="600" role="img">
+  <style>
+    .f  { font-family: Arial, Helvetica, sans-serif; }
+    .m  { font-family: Consolas, "Courier New", monospace; }
+    .ttl{ font-size: 30px; font-weight: bold; fill: #14506b; letter-spacing: 1.2px; }
+    .hd { font-size: 25px; font-weight: bold; fill: #11161b; }
+    .bd { font-size: 23px; fill: #3f4a55; }
+    .sm { font-size: 21px; fill: #6a7580; }
+    .st { font-size: 20px; font-weight: bold; fill: #2c7c9e; letter-spacing: 1px; }
+  </style>
+  <rect width="1320" height="600" fill="#ffffff"/>
+
+  <text class="f ttl" x="40" y="52">PHOTOVOLTAIC SYSTEM STUDY — GABÈS, TUNISIA · PVsyst 7</text>
+
+  <!-- ================= left: the site ================= -->
+  <rect x="40" y="86" width="500" height="358" rx="12" fill="#f0f4f6" stroke="#14506b" stroke-width="3"/>
+  <text class="f sm" x="62" y="116">SITE — SOUTHERN TUNISIA</text>
+
+  <!-- sun -->
+  <circle cx="150" cy="188" r="32" fill="#faf0da" stroke="#83540a" stroke-width="4"/>
+  <g stroke="#83540a" stroke-width="4" stroke-linecap="round">
+    <line x1="150" y1="132" x2="150" y2="146"/>
+    <line x1="150" y1="230" x2="150" y2="244"/>
+    <line x1="94"  y1="188" x2="108" y2="188"/>
+    <line x1="192" y1="188" x2="206" y2="188"/>
+    <line x1="110" y1="148" x2="120" y2="158"/>
+    <line x1="180" y1="218" x2="190" y2="228"/>
+    <line x1="110" y1="228" x2="120" y2="218"/>
+    <line x1="180" y1="158" x2="190" y2="148"/>
+  </g>
+
+  <!-- irradiation rays onto the array -->
+  <g stroke="#83540a" stroke-width="3" stroke-dasharray="9 7" opacity="0.85">
+    <line x1="196" y1="212" x2="300" y2="292"/>
+    <line x1="214" y1="196" x2="330" y2="276"/>
+    <line x1="232" y1="180" x2="360" y2="260"/>
+  </g>
+
+  <!-- ground -->
+  <line x1="250" y1="378" x2="500" y2="378" stroke="#3f4a55" stroke-width="4"/>
+
+  <!-- tilted array -->
+  <polygon points="280,352 452,268 466,282 294,366" fill="#14506b" stroke="#14506b" stroke-width="3"/>
+  <polygon points="288,358 448,280 448,286 292,364" fill="#2c7c9e" opacity="0.55"/>
+  <line x1="300" y1="360" x2="300" y2="378" stroke="#3f4a55" stroke-width="4"/>
+  <line x1="440" y1="292" x2="440" y2="378" stroke="#3f4a55" stroke-width="4"/>
+
+  <!-- tilt angle -->
+  <path d="M320 378 A 44 44 0 0 0 306 348" fill="none" stroke="#96271c" stroke-width="3"/>
+  <text class="f" x="336" y="370" font-size="22" font-weight="bold" fill="#96271c">tilt</text>
+  <text class="f sm" x="290" y="410" text-anchor="middle">orientation set for the site, not a default</text>
+
+  <!-- ================= right: the chain ================= -->
+  <g>
+    <rect x="572" y="86" width="708" height="76" rx="10" fill="#ffffff" stroke="#2c7c9e" stroke-width="3"/>
+    <text class="f st" x="596" y="118">01</text>
+    <text class="f hd" x="644" y="120">Site meteorological dataset</text>
+    <text class="f sm" x="644" y="146">Gabès’ own measured irradiation — not a generic climate</text>
+  </g>
+  <path d="M926 168 v20" stroke="#2c7c9e" stroke-width="4"/>
+  <path d="M926 190 l-8 -14 h16 z" fill="#2c7c9e"/>
+
+  <g>
+    <rect x="572" y="192" width="708" height="76" rx="10" fill="#ffffff" stroke="#2c7c9e" stroke-width="3"/>
+    <text class="f st" x="596" y="224">02</text>
+    <text class="f hd" x="644" y="226">Array sizing &amp; orientation</text>
+    <text class="f sm" x="644" y="252">module string layout, tilt and azimuth chosen against that dataset</text>
+  </g>
+  <path d="M926 274 v20" stroke="#2c7c9e" stroke-width="4"/>
+  <path d="M926 296 l-8 -14 h16 z" fill="#2c7c9e"/>
+
+  <g>
+    <rect x="572" y="298" width="708" height="76" rx="10" fill="#faf0da" stroke="#83540a" stroke-width="3"/>
+    <text class="f st" x="596" y="330" fill="#83540a">03</text>
+    <text class="f hd" x="644" y="332" fill="#83540a">Loss mechanisms accounted for</text>
+    <text class="f sm" x="644" y="358">temperature, soiling, incidence angle, wiring, conversion</text>
+  </g>
+  <path d="M926 380 v20" stroke="#83540a" stroke-width="4"/>
+  <path d="M926 402 l-8 -14 h16 z" fill="#83540a"/>
+
+  <g>
+    <rect x="572" y="404" width="708" height="76" rx="10" fill="#e3efe8" stroke="#285f42" stroke-width="3"/>
+    <text class="f st" x="596" y="436" fill="#285f42">04</text>
+    <text class="f hd" x="644" y="438" fill="#285f42">Computed energy-yield simulation</text>
+    <text class="f sm" x="644" y="464">carried through to a run — not left as an empty project file</text>
+  </g>
+
+  <!-- ================= footer ================= -->
+  <rect x="40" y="492" width="1240" height="70" rx="10" fill="#e2ecf1" stroke="#14506b" stroke-width="3"/>
+  <text class="f bd" x="660" y="522" text-anchor="middle">Sizing a PV array well means respecting the site’s real irradiation, temperature and losses —</text>
+  <text class="f bd" x="660" y="550" text-anchor="middle">the same discipline as designing a robot against measured conditions.</text>
+</svg>
